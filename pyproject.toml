@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tts-api-client"
+version = "0.1.0"
+description = "Клиент для собственного TTS API (Edge TTS / Google Translate TTS)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Denis Bisekeev", email = "bisekeevdenis@gmail.com" }]
+keywords = ["tts", "text-to-speech", "audio", "mp3", "voice"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+dependencies = ["requests>=2.25"]
+
+[project.urls]
+Homepage = "https://github.com/<ты>/tts-api-client"
+Source   = "https://github.com/<ты>/tts-api-client"
+Issues   = "https://github.com/<ты>/tts-api-client/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
